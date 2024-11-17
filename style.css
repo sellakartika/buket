@@ -1,0 +1,259 @@
+/* Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 30px;
+}
+
+header {
+    background-color: rosybrown;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav li {
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color:white;
+    font-size: 3rem;
+}
+
+.btn-order {
+    background-color:cornflowerblue;
+    color:white;
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px;
+    background-color:bisque;
+}
+
+.hero-image {
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+}
+
+.hero-content {
+    width: auto;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+}
+
+.hero-content p {
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    background: cornflowerblue;
+    color:white;
+    font-size: 40px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* Products Section */
+#products h2 {
+    padding: 40px 40px;
+    background-color:rosybrown;
+    color:white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: bisque;
+}
+
+.product {
+    text-align: center;
+    max-width: auto;
+    margin: 20px;
+    font-size: 3rem;
+}
+
+.product img {
+    width: 700px;
+    height: auto;
+    border-radius: 30px;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: rosybrown;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: bisque;
+    color: #000000;
+}
+
+.testimonial {
+    margin: 100px;
+}
+
+.testimonials img {
+    width: 500px;
+    height: auto;
+    border-radius: 1000px;
+}
+
+/* Contacts Section */
+#contact {
+    padding: 500px;
+    text-align: center;
+    font-size: 3rem;
+    background-color: rosybrown;
+    color: white;
+}
+
+form input,
+form textarea {
+    width: 50%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    font-size: 3rem;
+}
+
+button {
+    padding: 20px;
+    background-color:cornflowerblue;
+    color: white;
+    font-size: 3rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a img {
+    width: 5%;
+    height: auto;
+    margin: 10px;
+}
+
+/* Media Queries for Resposiveness */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .btn-order {
+        margin-top: 10px;
+    }
+
+    #hero{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+
+    #products h2 {
+        text-align: center;
+    }
+    .products-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials {
+        flex-direction: column;
+    }
+    .testimonial {
+        margin: auto;
+    }
+
+    form input,
+    form textarea {
+        width: 90%
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .product {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+}
